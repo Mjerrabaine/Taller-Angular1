@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+      <div class="col-6">
+          <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let uni of series">
+          <td>
+            <dd>{{uni.id}}</dd>
+          </td>
+          <td>
+            <dd style="color:rgba(0, 0, 255, 0.76)">{{uni.name}}</dd>
+          </td>
+          <td>
+            <dd style="color:black">{{uni.channel}}</dd>
+          </td>
+          <td>
+            <dd>{{uni.seasons}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      <h5 class="col-2">Seasons average:</h5>
+      <h5 class="col-1">{{seasonsA()}}</h5>
+  </div>
+  </div>
+  </div>
+</div>
